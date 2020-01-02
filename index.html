@@ -7,16 +7,16 @@
 
 <title>Web GIS</title>
 	 <!-- Import OpenLayers, reduced, wms read only version -->
-<script src="http://localhost:8080/test/libs/OpenLayers-2.13.1/OpenLayers.js" type="text/javascript"></script>
-<link rel="stylesheet" href="http://localhost:8080/test/libs/OpenLayers-2.13.1/theme/default/style.css" type="text/css">
-<link rel="stylesheet" href="http://localhost:8080/test/libs/OpenLayers-2.13.1/theme/default/style.css" type="text/css" />
+<script src="http://OpenLayers.js" type="text/javascript"></script>
+<link rel="stylesheet" href="http://style.css" type="text/css">
+<link rel="stylesheet" href="http://style.css" type="text/css" />
 
 <!-- ExtJS -->
-<script type="text/javascript" src="http://localhost:8080/test/libs/ext-4.2.1/examples/shared/include-ext.js"></script>
-<script type="text/javascript" src="http://localhost:8080/test/libs/ext-4.2.1/examples/shared/options-toolbar.js"></script>
+<script type="text/javascript" src="http://include-ext.js"></script>
+<script type="text/javascript" src="http://options-toolbar.js"></script>
 
 <!-- Shared -->
-<link rel="stylesheet" type="text/css" href="http://localhost:8080/test/libs/ext-4.2.1/examples/shared/example.css"/>
+<link rel="stylesheet" type="text/css" href="http://example.css"/>
 	 
 
 
@@ -26,7 +26,7 @@ Ext.Loader.setConfig({
     enabled: true,
     disableCaching: false,
     paths: {
-        GeoExt: "http://localhost:8080/test/libs/geoext2-2.1.0/src/GeoExt"
+        GeoExt: "http://GeoExt"
     }
 });
 
@@ -99,7 +99,7 @@ Ext.require([
 				
 				
 				var bgd_adm3 = new OpenLayers.Layer.WMS(
-                    "bgd_adm3", "http://localhost:8080/geoserver/wms",
+                    "bgd_adm3", "http://geoserver/wms",
                     {
                         LAYERS: 'test:bgd_adm3',
                         STYLES: '',
